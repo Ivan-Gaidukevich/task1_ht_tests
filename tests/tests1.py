@@ -61,7 +61,6 @@ def test_scores_out_of_range_negative():
         trim_mean_dive(scores)
 
 
-
 def test_scores_out_of_range_too_high():
     scores = np.array([8, 9, 11, 10, 6])
     with pytest.raises(ValueError):
