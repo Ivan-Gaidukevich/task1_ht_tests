@@ -25,7 +25,7 @@ def test_realistic_marketing_data():
 def test_with_negative_values():
     ad_spend = np.array([-1, -2, -3, -4, -5])
     sales = np.array([-10, -8, -6, -4, -2])
-    assert pearson_corr_ad_spend_x_sales(ad_spend, sales) == pytest.approx(1.0)
+    assert pearson_corr_ad_spend_x_sales(ad_spend, sales) == pytest.approx(-1.0)
 
 
 def test_different_lengths():
